@@ -1,0 +1,21 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "http://localhost",
+      "show": true,
+      "restart": false,
+      "windowSize": "1240x780"      
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "job",
+        "keepBrowserState": true,      
+      "waitForAction": true
+}
